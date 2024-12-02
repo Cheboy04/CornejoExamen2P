@@ -1,9 +1,9 @@
 ﻿namespace CornejoExamen2P
 {
-    public partial class MainPage : ContentPage
+    public partial class DCMainPage : ContentPage
     {
 
-        public MainPage()
+        public DCMainPage()
         {
             InitializeComponent();
         }
@@ -50,6 +50,8 @@
             var res5 = metLit * 1000;
             MetrosLit.Text = res5.ToString("F2");
         }
+
+
     }
 
 }

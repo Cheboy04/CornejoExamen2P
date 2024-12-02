@@ -1,12 +1,12 @@
 ﻿namespace CornejoExamen2P
 {
-    public partial class App : Application
+    public partial class DCApp : Application
     {
-        public App()
+        public DCApp()
         {
             InitializeComponent();
               
-            MainPage = new MainPage();
+            MainPage = new DCMainPage();
         }
     }
 }

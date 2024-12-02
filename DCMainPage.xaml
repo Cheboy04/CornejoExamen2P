@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CornejoExamen2P.MainPage">
+             x:Class="CornejoExamen2P.DCMainPage">
     <ScrollView>
 
     <FlexLayout Direction="Column"
@@ -57,7 +57,8 @@
             BackgroundColor="AliceBlue" 
             Placeholder="Galones a Litros" 
             HorizontalOptions="Center"
-            FlowDirection="LeftToRight"/>
+            FlowDirection="LeftToRight"
+            ClearButtonVisibility="WhileEditing"/>
         <Entry 
             x:Name="ResGal" 
             BackgroundColor="AliceBlue" 
@@ -127,6 +128,8 @@
             Text="Calcular metros cubicos a Litros"
             TextColor="White" Clicked="Button_Clicked6"
             HorizontalOptions="CenterAndExpand"/>
+
+
 
         </FlexLayout>
     </ScrollView>
