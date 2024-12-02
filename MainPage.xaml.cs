@@ -12,7 +12,7 @@
         {
             var litros = Double.Parse(Litros.Text);
      
-            var res = litros * 3.78;
+            var res = litros * 0.264172;
             ResLit.Text = res.ToString("F2"); 
         }
 
@@ -20,21 +20,28 @@
         {
             var litrosMet = Double.Parse(LitrosMetros.Text);
             var res1 = litrosMet * 1000;
+            LitrosMet.Text = res1.ToString("F2");
         }
 
         private void Button_Clicked3(object sender, EventArgs e)
         {
-
+            var galLit = Double.Parse(GalonesLitros.Text);
+            var res2 = galLit * 3.78541;
+            ResGal.Text = res2.ToString("F2");
         }
 
         private void Button_Clicked4(object sender, EventArgs e)
         {
-
+            var galMet = Double.Parse(GalonesMetros.Text);
+            var res3 = galMet * 0.00378541;
+            GalonesMet.Text = res3.ToString("F2");
         }
 
         private void Button_Clicked5(object sender, EventArgs e)
         {
-
+            var metGal = Double.Parse(MetrosGalones.Text);
+            var res4 = metGal * 264.172;
+            MetrosGal.Text = res4.ToString("F2");
         }
 
         private void Button_Clicked6(object sender, EventArgs e)

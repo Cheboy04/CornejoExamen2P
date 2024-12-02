@@ -53,7 +53,7 @@
             <?Galones a Litros?>
         <Label Text="Galones a Litros"/>
         <Entry 
-            x:Name="GalRes" 
+            x:Name="GalonesLitros" 
             BackgroundColor="AliceBlue" 
             Placeholder="Galones a Litros" 
             HorizontalOptions="Center"
