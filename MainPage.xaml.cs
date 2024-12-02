@@ -19,8 +19,8 @@
         private void Button_Clicked2(object sender, EventArgs e)
         {
             var litrosMet = Double.Parse(LitrosMetros.Text);
-            var res1 = litrosMet * 1000;
-            LitrosMet.Text = res1.ToString("F2");
+            var res1 = litrosMet * 0.001;
+            LitrosMet.Text = res1.ToString("F22");
         }
 
         private void Button_Clicked3(object sender, EventArgs e)
@@ -34,7 +34,7 @@
         {
             var galMet = Double.Parse(GalonesMetros.Text);
             var res3 = galMet * 0.00378541;
-            GalonesMet.Text = res3.ToString("F2");
+            GalonesMet.Text = res3.ToString("F22");
         }
 
         private void Button_Clicked5(object sender, EventArgs e)
@@ -46,7 +46,9 @@
 
         private void Button_Clicked6(object sender, EventArgs e)
         {
-
+            var metLit = Double.Parse(MetrosLitros.Text);
+            var res5 = metLit * 1000;
+            MetrosLit.Text = res5.ToString("F2");
         }
     }
 
